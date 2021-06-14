@@ -1,0 +1,175 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box; outline: none;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(1, 1, 12);
+    color: white;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.offer__adventages{
+    width: 50%;
+    padding: 200px;
+}
+.offer__adventages h2{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.offer__slider{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.offer__slider-counter{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+
+}
+
+.offer__adventages-text{
+ padding-top:30px;
+}
+.offer__slider-prev{
+    border: 1px solid rgb(248, 248, 248);
+    border-radius: 4px;
+    padding: 3px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 40px;
+}
+.offer__slider-next{
+    border: 1px solid rgb(223, 195, 195);
+    border-radius: 4px;
+    padding: 3px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 40px;
+}
+.offer__slider-prev:hover,.offer__slider-next:hover {
+    background-color: rgb(228, 215, 215);
+    color: rgb(17, 1, 1);
+    cursor: pointer;
+}
+#current{
+    font-size: 30px;
+    font-weight: 500;
+}
+#total{
+    color: rgba(224, 218, 218, 0.4);
+}
+.offer__slider-wrapper{
+    width: 650px;
+    overflow: hidden;
+    height:auto;
+}
+.offer__slider-inner{
+    display: flex;
+    flex-direction: row;
+    transition: .5s ease;
+}
+
+
+
+.offer__slide img {
+    
+    width:650px ;
+    height: auto;
+    border-radius: 15px
+
+}
+.translateX{
+    transform: translateX(-650px);
+
+}
+@media (max-width:1400px){
+    .offer__adventages{
+        padding: 100px;
+    }
+    .offer__slide img{
+        width: 500px;
+    }
+    .offer__adventages-text{
+        font-size: 20px;
+    }
+    .offer__slider-wrapper{
+        width: 50px;
+    }
+    .offer__slider-wrapper{
+        width: 500px;
+    }
+    .translateX{
+        transform: translateX(-500px);
+    }
+    .offer__slider{
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width:1200px){
+    .container{
+        height: 100%;
+    }
+    .offer__adventages{
+        width: 100%;
+
+    }
+.offer__slider-wrapper
+{
+    width: 100%;
+    
+}
+}
+@media (max-width:816px){
+    .offer__adventages{
+        width: 100%;
+        padding: 50px;
+    }  
+    .offer__slide img{
+        width: 350px;
+    }
+    .offer__adventages-text{
+        font-size: 15px;
+    }
+    .offer__slider-wrapper{
+        width: 50px;
+    }
+    .offer__slider-wrapper{
+        width: 350px;
+    }
+    .translateX{
+        transform: translateX(-350px);
+    }
+    .offer__slider{
+        padding-bottom: 20px;
+    }
+}
+@media (max-width:
+350px){
+    .offer__slide img{
+        width: 300px;
+    }
+    .offer__adventages-text{
+        font-size: 15px;
+    }
+    .offer__slider-wrapper{
+        width: 50px;
+    }
+    .offer__slider-wrapper{
+        width: 300px;
+    }
+    .translateX{
+        transform: translateX(-300px);
+    }
+}
